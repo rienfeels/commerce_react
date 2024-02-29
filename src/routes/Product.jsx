@@ -18,8 +18,10 @@ const Products = () => {
             <li key={index}>
               <Link to={Products.id}>
                 <div>{product.title}</div>
-                <div>
+                <div className="card">
+                  {/* <div className="card2"> */}
                   <img src={product.image} />
+                  {/* </div> */}
                 </div>
                 <div> Price: {product.price}</div>
               </Link>

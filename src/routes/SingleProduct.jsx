@@ -14,7 +14,7 @@ const SingleProduct = () => {
     <p>
       {" "}
       {data.title}
-      <img id="image" src={data.image} />
+      <img className="card" id="image" src={data.image} />
       {data.description} {data.price}
     </p>
   );
