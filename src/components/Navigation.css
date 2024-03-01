@@ -1,0 +1,43 @@
+#main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100vh;
+  background: rgba(2, 0, 36, 0.374);
+  background: rgba(255, 255, 255, 0.317);
+}
+.site-title {
+  font-size: 30px;
+  background-color: #24242467;
+  border-radius: 10px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+.nav-items {
+  font-size: 30px;
+  color: white;
+  background-color: #2424245b;
+  width: 310px;
+  margin-left: 20px;
+  margin-right: 25px;
+  border-radius: 10px;
+  height: 900px;
+  padding-top: 20px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+a {
+  color: white;
+}
+
+#nav-div {
+  width: 30vw;
+  height: 40vh;
+}

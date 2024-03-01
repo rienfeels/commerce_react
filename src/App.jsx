@@ -6,6 +6,9 @@ import ErrorPage from "./pages/ErrorPage";
 import SingleProduct, {
   loader as singleProductLoader,
 } from "./routes/SingleProduct";
+import CategoryProducts, {
+  loader as categoryProductsLoader,
+} from "./routes/CategoryProducts";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,12 @@ const router = createBrowserRouter([
         path: "/product/:id",
         element: <SingleProduct />,
         loader: singleProductLoader,
+      },
+
+      {
+        path: "/category/:category",
+        element: <CategoryProducts />,
+        loader: categoryProductsLoader,
       },
     ],
   },

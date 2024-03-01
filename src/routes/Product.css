@@ -1,0 +1,20 @@
+/* Product.css */
+
+.product-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-categories {
+  flex-shrink: 0; /* Do not allow shrinking */
+  width: 200px; /* Set a fixed width for the categories */
+  padding-right: 20px; /* Adjust as needed */
+}
+
+.product-list {
+  flex-grow: 1; /* Allow growing to fill the available space */
+  padding-left: 20px; /* Adjust as needed */
+  height: 100vh;
+  overflow: scroll;
+  text-align: -webkit-center;
+}
