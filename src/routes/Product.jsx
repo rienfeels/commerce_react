@@ -1,6 +1,7 @@
 // Product.jsx
-
+import React from "react";
 import { useLoaderData, Link } from "react-router-dom";
+import { useCart } from "../components/CartContext"; // Import useCart
 import "./Product.css";
 
 export async function loader() {
@@ -12,6 +13,8 @@ export async function loader() {
 
 const Products = () => {
   const { data } = useLoaderData();
+  const { addToCart } = useCart(); // Use useCart hook to get addToCart function
+
   return (
     <>
       <div className="product-container">
@@ -35,6 +38,10 @@ const Products = () => {
                   <div>{product.title}</div>
                   <div> Price: {product.price}</div>
                 </Link>
+                {/* Add button to add product to cart */}
+                <button className="button" onClick={() => addToCart(product)}>
+                  Add to Cart
+                </button>
               </li>
             );
           })}
